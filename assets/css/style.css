@@ -1,0 +1,419 @@
+/* //////////////////////////////////// */
+/* GENERAL */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+.buttonB {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px white solid;
+    padding: 1% 3%;
+    font-weight: 700;
+}
+
+.buttonB:hover {
+    color: darkviolet;
+    background-color: whitesmoke;
+}
+
+/* //////////////////////////////////// */
+/* MENU */
+.header {
+    background-color: white;
+}
+.navBar {
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    padding: .5% 0;
+}
+.menuList {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menuItem {
+    list-style-type: none;
+    border: transparent 3px solid;
+}
+.menuList a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.menuItem a:hover {
+    color: darkviolet;
+    border-top: darkviolet 3px solid;
+}
+.choixLangue {
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 10px;
+    padding: .1% .4%;
+    list-style: none;
+    margin-bottom: .3%;
+}
+
+
+/* //////////////////////////////////// */
+/* HERO */
+
+.hero {
+    background-color: black;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    /* LOGO */
+
+.heroImg {
+    height: 50%;
+}
+.heroImg img {
+    width: 100%;
+}
+
+.hero p {
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 600;
+    word-spacing: .5rem;
+    text-align: center;
+    word-wrap: normal;
+}
+
+
+/* //////////////////////////////////// */
+/* DESCRIPTION DU SITE */
+
+.description {
+    background-color: white;
+    text-align: center;
+    padding: 2% 16%;
+}
+.description p {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+
+/* //////////////////////////////////// */
+/* SERVICES */
+.services {
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+    /* CARD */
+    .servicesCard {
+        margin: 4% 1% 4% 1%;
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    .servicesCardImg {
+        width: 100%;
+    }
+    .servicesCardImg:hover {
+        transform: scale(1.1);
+    }
+    .servicesCardImg img {
+        width: 100%;
+    }
+    .services h3 {
+        color: white;
+        text-transform: uppercase;
+    }
+    .services p {
+        color: white;
+    }
+    .services a {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%,0);
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px white solid;
+        padding: 3% 5%;
+        margin: 0;
+        font-weight: 700;
+        font-size: .8rem;
+    }
+    .services a:hover {
+        color: darkviolet;
+        background-color: whitesmoke;
+    }
+
+/* //////////////////////////////////// */
+/* NEWS */
+.news {
+    background-color: whitesmoke;
+    padding: 3% 0;
+}
+    /* HEAD */
+    .newsTitle {
+        width: 80%;
+        padding: 5% 0 2% 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .newsTitleHead h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: .3rem;
+        margin: 0;
+    }
+    .newsTitle p {
+        margin: 0;
+    }
+    .newsTitle a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px black solid;
+        padding: 1.5% 3%;
+        font-weight: 700;
+    }
+    .newsTitle a:hover {
+        color: white;
+        background-color: darkviolet;
+    }
+    /* NEWS CARD */
+    .newsCards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /* CARD */
+    .newsCard {
+        width: 300px;
+        height: 550px;
+        padding: 3%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        position: relative;
+    }
+    .newsCardImg {
+        width: 100%;
+        height: 300px;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, .8);
+    }
+    .newsCardImg:hover {
+        transform: scale(1.1);
+    }
+    .newsCardImg img {
+        width: 100%;
+        height: 100%;
+    }
+    .servicesCardContent {
+        width: 100%;
+    }
+    .newsCard h3 {
+        color: black;
+        text-align: left;
+    }
+    .newsCard p {
+        color:black;
+        text-align: left;
+    }
+    .newsCard a {
+        text-align: left;
+        position: absolute;
+        bottom: 0;
+        color: darkviolet;
+    }
+    .newsCard a:hover {
+        color: violet;
+    }
+
+
+/* //////////////////////////////////// */
+/* MENU DU BAS */
+.bottomMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5% 0;
+}
+.bmLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bmRight {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bmItem {
+    width: 250px;
+}
+.bottomMenu a:hover {
+    color: darkviolet;
+    font-weight: 600;
+}
+.bottomMenu h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+    /* LOGO */
+    
+
+    /* INFOS PRATIQUES */
+    .bmInfoPratiques ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .bmInfoPratiques a {
+        text-decoration: none;
+        color: black;
+        line-height: 2rem;
+    } 
+    /* INFOS PARENTS */
+    .bmParents{
+        font-size: 100%;
+    }
+    .bmParents a {
+        text-decoration: none;
+        color: black;
+    }
+    /* INFOS CONTACT */
+    .bmContact {
+        font-size: 100%;
+        }
+    .bmContact p {
+        margin: 0;
+    }
+
+/* //////////////////////////////////// */    
+/* RETOMBEES PRESSE */
+.aboutUs {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2% 0 ;
+    border-top: 1px lightgray solid;
+    flex-wrap: wrap;
+}
+
+    /* LISTE DE PRESSE */
+    .aboutUs-list {
+        flex: 4;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .aboutUs-title {
+        flex: 1;
+        min-width: max-content
+    }
+    .aboutUs h4 {
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .aboutUs a {
+        font-size: .7rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+    }
+    .aboutUs a:hover {
+        color: darkviolet;
+        font-weight: 600;
+    }
+
+    .aboutUsItem {
+        padding: 1%;
+        
+    }
+    .aboutUsItem:hover {
+        transform: scale(1.1);
+    }
+
+/* //////////////////////////////////// */
+/* PARTENAIRES */
+.partners {
+    background-color: black;
+    padding: 2%;
+}
+.partners h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin: 0;
+    text-align: center;
+}
+.partners-list {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.partners-item {
+    padding: 1% .5%;
+}
+
+/* //////////////////////////////////// */
+/* COOKIES */
+.cookies {
+    text-align: center;
+    background-color: gray;
+    font-size: .7rem;
+    line-height: 1.4rem;
+}
+.cookies p {
+    color: white;
+}
+.cookies a {
+    text-decoration: none;
+    color: white;
+    }
+
+.cookies a:hover {
+    color: darkviolet;
+}
